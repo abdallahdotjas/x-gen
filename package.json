@@ -1,0 +1,26 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "package to generate, execute your db scripts and create base configurations ",
+  "main": "scr/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jashaikh-dev/x-gen.git"
+  },
+  "keywords": [
+    "code",
+    "generation"
+  ],
+  "author": "Junaid Azhar Shaikh <junaidazharshaikh@gmail.com> (http://tychhexagon.com/me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jashaikh-dev/x-gen/issues"
+  },
+  "homepage": "https://github.com/jashaikh-dev/x-gen#readme",
+  "dependencies": {
+    "jest": "25.1.0"
+  }
+}
