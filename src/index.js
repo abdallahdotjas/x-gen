@@ -15,8 +15,8 @@ function createArrayOfColumns(columnsObject) {
         const column = columnsObject[key]
         const columnDetails = []
         columnDetails.push(key.toLowerCase())
-        column.type == 'VARCHAR' 
-            ? columnDetails.push(`${ column.type } ${(column.size)}`)
+        column.type == 'string' 
+            ? columnDetails.push(`VARCHAR ${(column.size)}`)
             : columnDetails.push(`${ column.type }`)
         if(column.constraints && column.constraints.length)
             column.constraints.forEach(item => columnDetails.push(`${ item.toUpperCase() }`))
