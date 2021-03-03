@@ -2,7 +2,10 @@
   "name": "y",
   "version": "1.0.0",
   "description": "package to generate, execute your db scripts and create base configurations ",
-  "main": "scr/index.js",
+  "main": "bin/index.js",
+  "bin": {
+    "xgen": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +24,10 @@
   },
   "homepage": "https://github.com/jashaikh-dev/x-gen#readme",
   "dependencies": {
-    "jest": "25.1.0"
+    "jest": "25.1.0",
+    "axios": "0.21.1",
+    "boxen": "4.0.0",
+    "chalk": "2.4.2",
+    "yargs": "13.2.4"
   }
 }
