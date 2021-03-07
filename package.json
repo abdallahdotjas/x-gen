@@ -1,5 +1,5 @@
 {
-  "name": "xcodegen",
+  "name": "xkodegen",
   "version": "1.0.0",
   "description": "package to generate, execute your db scripts and create base configurations ",
   "main": "bin/index.js",
