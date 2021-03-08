@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abdullahdotjs/x-gen.git"
+    "url": "git+https://github.com/abdallahdotjs/x-gen.git"
   },
   "keywords": [
     "code",
@@ -20,9 +20,9 @@
   "author": "Junaid Azhar Shaikh <junaidazharshaikh@gmail.com> (http://tychhexagon.com/me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abdullahdotjs/x-gen/issues"
+    "url": "https://github.com/abdallahdotjs/x-gen/issues"
   },
-  "homepage": "https://github.com/abdullahdotjs/x-gen#readme",
+  "homepage": "https://github.com/abdallahdotjs/x-gen#readme",
   "dependencies": {
     "jest": "25.1.0",
     "axios": "0.21.1",
