@@ -7,9 +7,16 @@ const yargs = require('yargs');
 
 const options = yargs
   .usage("Usage: -n <name>")
-  .option("n", {alias: "name", describe: "Your name", type: "string", demandOption: true })
-  .option("s", { alias: "search", describe: "Search term", type: "string"})
+  .option("n", {alias: "name", describe: "Your name", type: "string" })
+  .option("cs:c", { alias: "csharp:class", describe: "create csharp command", type: "string"})
   .argv;
+
+
+if(options["csharp:class"]) {
+  console.log(`You are trying to generate a C# Class: ${options["csharp:class"]}`);
+  return;
+}
+
 
 const greeting = chalk.white.bold(`Name:  ${options.name}`);
 
