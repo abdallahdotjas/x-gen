@@ -6,7 +6,9 @@
 const dbConfig = require('./config.json')
 
 const create = require('./operations/create')
+const createdotcs = require('./operations/createdotcs')
 
 module.exports = {
-    create
+    create,
+    createdotcs
 }

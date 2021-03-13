@@ -17,3 +17,36 @@ describe('Create Query', () => {
     })
 
 })
+
+const classPerson = JSON.stringify({
+    "person": {
+      "type": "class",
+      "interfaces": ["iperson","ihuman"],
+      "props": {
+        "name":  "string" ,
+        "phone": "string", 
+        "age": "int",
+        "gender": "char"
+      }
+    },
+    "person2": {
+        "type": "class",
+        "interfaces": ["iperson","ihuman"],
+        "props": {
+          "name":  "string" ,
+          "phone": "string", 
+          "age": "int",
+          "gender": "char"
+        }
+      }
+  });
+
+  describe('Create Query', () => {
+    it('should return correct create query', () => {
+        const query = gen.createdotcs(JSON.parse(classPerson))
+        console.log(query);
+    })
+
+})
+
+

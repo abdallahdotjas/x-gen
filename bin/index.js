@@ -11,12 +11,10 @@ const options = yargs
   .option("cs:c", { alias: "csharp:class", describe: "create csharp command", type: "string"})
   .argv;
 
-
 if(options["csharp:class"]) {
   console.log(`You are trying to generate a C# Class: ${options["csharp:class"]}`);
   return;
 }
-
 
 const greeting = chalk.white.bold(`Name:  ${options.name}`);
 
