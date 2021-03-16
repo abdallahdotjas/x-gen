@@ -1,0 +1,22 @@
+{
+  "person": {
+    "type": "class",
+    "interfaces": ["iperson","ihuman"],
+    "props": {
+      "name":  "string" ,
+      "phone": "string", 
+      "age": "int",
+      "gender": "char"
+    }
+  },
+  "person2": {
+      "type": "class",
+      "interfaces": ["iperson","ihuman"],
+      "props": {
+        "name":  "string" ,
+        "phone": "string", 
+        "age": "int",
+        "gender": "char"
+      }
+    }
+}

@@ -1,31 +1,30 @@
 #!/usr/bin/env node
 
-const chalk = require('chalk');
-const boxen = require('boxen');
-const yargs = require('yargs');
 
+const yargs = require('yargs');
+const gen = require('./../src/index.js')
+
+const fs = require('fs')
 
 const options = yargs
   .usage("Usage: -n <name>")
   .option("n", {alias: "name", describe: "Your name", type: "string" })
-  .option("cs:c", { alias: "csharp:class", describe: "create csharp command", type: "string"})
+  .option("c", { alias: "csharp", describe: "create csharp command", type: "string"})
   .argv;
 
-if(options["csharp:class"]) {
-  console.log(`You are trying to generate a C# Class: ${options["csharp:class"]}`);
+
+  console.log(options)
+if(options.c) {
+  console.log(`You are trying to generate a C# Class: ${options.csharp}`);
+  const data = fs.readFile(options.csharp, 'utf8', (err, data) => {
+    if(err)
+    {
+      console.log(`Error reading file from disk: ${err}`);
+      return;
+    }  
+    
+    gen.createdotcs(JSON.parse(data));
+  });
   return;
 }
-
-const greeting = chalk.white.bold(`Name:  ${options.name}`);
-
-const boxenOptions = {
-  padding: 1,
-  margin: 1, 
-  borderStyle: "round",
-  borderColor: "green",
-  backgroundColor: "#555555"
-};
-
-const msgBox = boxen( greeting, boxenOptions);
-
-console.log(msgBox);
+console.log(`Your name is: ${options.name}`)

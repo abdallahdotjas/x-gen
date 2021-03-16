@@ -12,6 +12,7 @@ const specialSymbols = {
 }
 
 module.exports = function (c) {
+  
   const keys = Object.keys(c)
   
   let entity = ""
