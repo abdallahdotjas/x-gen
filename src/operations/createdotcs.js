@@ -34,7 +34,7 @@ module.exports = function (c) {
     
     entity += specialSymbolFunctions.addCloseBrace();
     
-    fs.appendFile(`./${k}.cs`, entity, function (err) {
+    fs.appendFile(`${__dirname}/${k}.cs`, entity, function (err) {
       if (err) throw err; 
     });
     entity = ""
